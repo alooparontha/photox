@@ -1,0 +1,268 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/header-img.jpeg) no-repeat center center/cover;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.banner-heading {
+    animation-name: banner-heading-anim;
+    animation-duration: 2s;
+}
+
+.banner-para {
+    animation-name: banner-para-anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+
+@keyframes banner-heading-anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes banner-para-anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.navigation-bar {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    padding: 30px;
+}
+
+.navigation-bar-item {
+    font-size: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+.navigation-bar-link {
+    color: white;
+    transition: all .3s;
+}
+
+.navigation-bar-link:hover {
+    color: deepskyblue;
+    font-size: 1.4rem;
+
+}
+
+button {
+    outline: none !important;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 23px;
+    margin: 5px;
+    height: 3px;
+    transition: all 0.5s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.change .line2 {
+    opacity: 0;
+
+}
+
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navigation-bar {
+    padding: 15px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    transition: all 0.8s;
+}
+
+/*Mission Section*/
+
+.mission-heading {
+    font-weight: 500;
+}
+
+.horizonatal-line {
+    margin: auto;
+    width: 150px;
+    height: 4px;
+    background: white;
+    margin-top: 15px;
+}
+
+.from-left {
+    animation-name: from_left;
+    animation-duration: 3s;
+}
+
+.from-right {
+    animation-name: from_right;
+    animation-duration: 3s;
+}
+
+@keyframes from_left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes from_right {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.mission-section {
+    background: #171d22;
+}
+
+/*End Of Mission Section*/
+
+
+
+/*Collection Section*/
+
+.card-shadow {
+    box-shadow: 5px 8px 20px #444;
+}
+
+.heading {
+    position: absolute;
+    top: 70%;
+    right: 0px;
+    width: 70%;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background: #222;
+    opacity: 0.7;
+    transition: all .5s;
+}
+
+.heading:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*End Of Collection Section*/
+
+
+/*Gallery section*/
+.horizonatal-line-dark {
+    margin: auto;
+    width: 150px;
+    height: 4px;
+    background: grey;
+    margin-top: 15px;
+}
+
+.gallery-list-item {
+    cursor: pointer;
+    user-select: none;
+}
+
+/*End Of Gallery section*/
+
+
+/*Review Section*/
+.review-section {
+    background: #171d22;
+}
+
+.carousel-para {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/*End Of Review Section*/
+
+
+/*Contact Section*/
+#contact-section {
+    background: linear-gradient(105deg, rgba(21, 31, 32, 1)0%, rgba(21, 31, 32, 0.95)50%, transparent 50%), url('../img/form-img.jpeg') no-repeat center center /cover
+}
+
+input {
+    outline: none !important;
+}
+
+.input {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid white;
+    transition: all 0.9s;
+    font-size: 1.2rem;
+
+}
+
+.input:focus {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid white;
+    box-shadow: none;
+    border-bottom: 2px solid red;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    transition: all .8s;
+}
+
+.input:placeholder-shown + .label {
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+}
+
+
+/*End Of Contact Section*/
